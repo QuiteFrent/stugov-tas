@@ -1,5 +1,3 @@
-$delay: 0.3s;
-
 * {
   box-sizing: border-box;
 }
@@ -10,6 +8,16 @@ $delay: 0.3s;
 }
 
 html {
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
 
   img.responsive {
     max-width: 100%;
@@ -25,11 +33,12 @@ html {
     padding-bottom: 1rem;
     background-color: transparent;
     font-family: 'Open Sans', sans-serif;
-    transition: $delay;
 
     .navbar-brand {
-      font-weight: bolder;
-      color: white;
+      img {
+        width: 48px;
+        height: 48px;
+      }
     }
 
     .navbar-toggler {
@@ -37,7 +46,6 @@ html {
     }
 
     .nav-item {
-      margin: 0 1rem;
       font-size: 18px;
 
       .nav-link {
@@ -51,10 +59,14 @@ html {
 
   }
 
+  @media (max-width: 768px) {
+    .navbar-custom {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
   #intro {
-    background: linear-gradient(rgba(102, 30, 98, 0.8),
-        rgba(80, 23, 77, 0.8)),
-      url(../img/background.jpg);
+    background: linear-gradient(rgba(70, 32, 67, 0.8), rgba(70, 32, 67, 0.8)), url(../img/background.jpg);
     margin: 0;
 
 
@@ -70,7 +82,7 @@ html {
       .intro-text {
         color: whitesmoke;
         padding-top: 15rem;
-        padding-bottom: 10rem;
+        padding-bottom: 13rem;
         text-align: center;
 
         .main-heading {
@@ -93,11 +105,11 @@ html {
       border-radius: 16px;
       margin-top: 0.7rem;
       padding: 0.2rem 3em;
-      background-color: darkgreen;
+      background-color: rgb(0, 54, 0);
       color: whitesmoke;
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 1000;
-      font-family: "Sintony";
+      font-family: "Montserrat", sans-serif;
     }
   }
 
@@ -123,9 +135,17 @@ html {
         font-family: "Open Sans", sans-serif;
       }
     }
-    .content-heading{
+
+    .content-heading {
       font-family: "Playfair Display", sans-serif;
       font-size: 2rem;
+    }
+
+    .btn-about {
+      font-family: "Vollkorn", sans-serif;
+      background-color: pink;
+      color: forestgreen;
+      font-weight: bolder;
     }
 
   }
