@@ -1,0 +1,176 @@
+$delay: 0.3s;
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Simplifica;
+  src: url(../img/simplifica.ttf);
+}
+
+html {
+
+  img.responsive {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  scroll-behavior: smooth;
+
+  .navbar-custom {
+    position: absolute;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    transition: $delay;
+
+    .navbar-brand {
+      font-weight: bolder;
+      color: white;
+    }
+
+    .navbar-toggler {
+      color: white;
+    }
+
+    .nav-item {
+      margin: 0 1rem;
+      font-size: 18px;
+
+      .nav-link {
+        color: gainsboro;
+
+        &:hover {
+          color: lightgreen;
+        }
+      }
+    }
+
+  }
+
+  #intro {
+    background: linear-gradient(rgba(102, 30, 98, 0.8),
+        rgba(80, 23, 77, 0.8)),
+      url(../img/background.jpg);
+    margin: 0;
+
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+      /* Full height */
+      height: 100%;
+
+      .intro-text {
+        color: whitesmoke;
+        padding-top: 15rem;
+        padding-bottom: 10rem;
+        text-align: center;
+
+        .main-heading {
+          font-family: "Montserrat", sans-serif;
+          font-size: 6.5vh;
+          font-weight: 1000;
+        }
+
+        .sub-heading {
+          font-family: "Sintony", sans-serif;
+          font-size: 2.5vh;
+        }
+
+      }
+
+    }
+
+    .btn-about {
+      display: inline-block;
+      border-radius: 16px;
+      margin-top: 0.7rem;
+      padding: 0.2rem 3em;
+      background-color: darkgreen;
+      color: whitesmoke;
+      font-size: 22px;
+      font-weight: 1000;
+      font-family: "Sintony";
+    }
+  }
+
+  #about {
+    background-color: white;
+    text-align: center;
+    padding-top: 2rem;
+
+    .about-text {
+      h1 {
+        font-weight: bolder;
+        line-height: 2rem;
+        border-bottom: 0px solid black;
+        font-family: 'Lora', sans-serif;
+        padding-bottom: 1.5rem;
+      }
+
+      p {
+        font-weight: 200;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        margin-bottom: 7rem;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+    .content-heading{
+      font-family: "Playfair Display", sans-serif;
+      font-size: 2rem;
+    }
+
+  }
+
+  #portfolio {
+    font-family: 'Karla', sans-serif;
+    background-color: rgb(180, 223, 229);
+
+    .section-heading {
+      font-family: "Open Sans", sans-serif;
+      font-size: 48px;
+      font-weight: bolder;
+    }
+
+    .project-item {
+      position: relative;
+
+      .project-img {
+        object-fit: cover;
+      }
+
+      .project-overlay {
+        text-decoration: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: .3s;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.8);
+          opacity: 1;
+        }
+
+        .project-title {
+          color: #ffa600;
+          font-size: 48px;
+        }
+
+        .project-text {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

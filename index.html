@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display|Cutive|Noto+Serif+TC|Sintony|Lato|Karla|Montserrat|Roboto|Josefin+Sans|Oxygen|Lora|Ubuntu"
+        rel="stylesheet">
+
+    <title>TAS Student Government</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom w-100">
+        <a class="navbar-brand" href="#">
+            <img src="img/icon.jpg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="#portfolio">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Quis sum?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#poetry">Placeholder</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid" id="intro">
+        <div class="container">
+            <div class="intro-text">
+                <h2 style="font-size: 3vh">2019-2020</h1>
+                    <h1 class="main-heading">Student Government</h1>
+                    <h5 class="sub-heading font-weight-light font-italic">of Taipei American School</p>
+
+                        <div class="container-fluid">
+                            <button type="button" class="btn btn-primary btn-about">About Us</button>
+                        </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-text">
+                <h1 class="w-100">Our Mission</h1>
+                <div class="row justify-content-center">
+
+                    <p class="col-7">The Student Government Executive Council works to achieve the goals set forth in
+                        the
+                        mission
+                        statement, represents the students, and is responsible for the oversight of all government
+                        activities
+                        StuGov is an organization by students, for students. We want to bring the school closer
+                        together and
+                        improve the student experience.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <img class="img-fluid rounded" src="img/spirit_week.jpg" alt="Spirit Week" />
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-center">
+                    <h4 class="font-weight-light">Get Involved</h4>
+                    <h3 class="content-heading">Apply to be a member for 2019-2020 StuGov</h1>
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <button type="button" class="btn btn-primary btn-about mt-3 w-100">About Us</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact me boi</h1>
+
+
+
+
+
+    </section>
+
+
+    <script type="text/x-template" id="portfolio-project">
+        <div class="col-md-4 col-sm-6 col-xs-12 p-2" @mouseover="showOverlay = !showOverlay" @mouseleave="showOverlay = !showOverlay">
+            <div class="project-item w-100 h-100">
+                <img class="project-img w-100 h-100" :src="path" alt="Image">
+                <a class="project-overlay d-flex flex-column justify-content-center text-center p-4" href="#">
+                    <h4 class="project-title font-weight-bold">{{title}}</h4>
+                    <span class="project-text text-muted">{{description}}</span>
+                </a>
+            </div>
+        </div>
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.9/dist/vue.js"></script>
+
+    <!-- Custom scripts-->
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
