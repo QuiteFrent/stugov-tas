@@ -19,12 +19,6 @@ html {
     }
   }
 
-  img.responsive {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
-
   scroll-behavior: smooth;
 
   .navbar-custom {
@@ -146,7 +140,7 @@ html {
       .btn-about {
         font-family: "Vollkorn", sans-serif;
         background-color: pink;
-        color: forestgreen;
+        color: rgb(1, 63, 1);
         font-weight: bolder;
       }
 
@@ -154,7 +148,7 @@ html {
 
   }
 
-  #contact {
+  #team {
     background: #5cd895;
     color: #05386d;
     text-align: center;
@@ -163,10 +157,14 @@ html {
     .main-heading {
       letter-spacing: -1px;
       font-weight: 900;
+      border-bottom: 1px solid #05386d 
+    }
+    .sub-heading{
+      font-size: 2rem;
+      font-weight: bold;
     }
 
-    .row {
-      color: wheat;
+    .officer-section {
 
       [class^="col-"],
       [class*=" col-"] {
@@ -194,7 +192,7 @@ html {
           bottom: 0;
           left: 0;
           right: 0;
-          transition: .5s ease;
+          transition: .35s ease;
           background-color: #05386B;
           border-radius: 5px;
           font-size: 18px;
@@ -218,6 +216,19 @@ html {
         color: black;
       }
     }
+    .member-section{
+      color: darkblue;
+      h4{
+        font-weight: bolder;
+        border-bottom: 1px solid black;
+      }
+      .members{
+        font-weight: bold;
+
+      }
+    }
+
+
 
 
 
@@ -226,7 +237,25 @@ html {
 
   }
 
-  #media {
+  #contact{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #1f1f1f;
+    form{
+      .row{
+        justify-content: center;
+        textarea{
+          min-height: 180px;
+        }
+        .hpot{
+          display: none;
+        }
+      }
+    }
+  }
+
+  footer {
     background-color: #1f1f1f;
     color: darkgray;
     text-align: center;
@@ -246,75 +275,36 @@ html {
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  #portfolio {
-    font-family: 'Karla', sans-serif;
-    background-color: rgb(180, 223, 229);
-
-    .section-heading {
-      font-family: "Open Sans", sans-serif;
-      font-size: 48px;
-      font-weight: bolder;
-    }
-
-    .project-item {
-      position: relative;
-
-      .project-img {
-        object-fit: cover;
-      }
-
-      .project-overlay {
-        text-decoration: none;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        transition: .3s;
-
-        &:hover {
-          background: rgba(0, 0, 0, 0.8);
-          opacity: 1;
-        }
-
-        .project-title {
-          color: #ffa600;
-          font-size: 48px;
-        }
-
-        .project-text {
-          font-size: 20px;
-        }
-      }
+  .popover{
+    background-color: pink;
+    .popover-body{
+      color: black;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

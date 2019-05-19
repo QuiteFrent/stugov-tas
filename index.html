@@ -27,7 +27,7 @@
 </head>
 
 <body>
-
+    <!-- Embed Facebook -->
     <nav class="navbar navbar-expand-md navbar-custom w-100">
         <a class="navbar-brand" href="https://www.facebook.com/tasstugov">
             <img src="img/icon.jpg" alt="Icon">
@@ -42,16 +42,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mr-3">
-                    <a class="nav-link" href="#portfolio">About Us</a>
+                    <a class="nav-link" href="#about">About Us</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link" href="#about">Quis sum?</a>
+                    <a class="nav-link" href="#team">Meet the Team</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link" href="#poetry">Placeholder</a>
+                    <a class="nav-link" href="#poetry">Petitions</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us!</a>
+                    <a class="nav-link" href="#contact">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -92,7 +92,11 @@
                     <h3 class="content-heading">Apply to be a 2019-2020 StuGov member!</h1>
                         <div class="row justify-content-center">
                             <div class="col-5">
-                                <button type="button" class="btn btn-primary btn-about mt-3 w-100">Apply Now!</button>
+                                <button type="button" class="btn btn-primary btn-about mt-3 w-100" data-container="body"
+                                    data-toggle="popover" data-placement="bottom"
+                                    data-content="Unfortunately we are no longer accepting applications for 2019-2020 StuGov, past applications can be found here: <a href='https://docs.google.com/document/d/1ETW-OfmwIlJAdvIpwx9WaNBtN8oTXAYfy9qmSFwYuPk/edit?usp=sharing'><strong>link</strong></a>"
+                                    data-html=true>Apply
+                                    Now!</button>
                             </div>
                         </div>
                 </div>
@@ -106,7 +110,8 @@
                     <h3 class="content-heading">A family of over 50 members and seven officers!</h1>
                         <div class="row justify-content-center">
                             <div class="col-5">
-                                <button type="button" class="btn btn-primary btn-about mt-3 w-100">More Info!</button>
+                                <button type="button" class="btn btn-primary btn-about mt-3 w-100">More
+                                    Info!</button>
                             </div>
                         </div>
                 </div>
@@ -130,69 +135,194 @@
         </div>
     </section>
 
-    <section id="contact" class="py-5">
+    <section id="team" class="py-5">
         <div class="container justify-content-center">
             <h1 class="main-heading">Meet the Team!</h1>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="img-container">
-                        <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
-                        <div class="overlay">Andy Xu (12)</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.</p>
+            <div class="officer-section mb-3">
+                <h2 class="sub-heading">Officers</h2>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-5 col-lg-3">
+                        <div class="img-container">
+                            <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
+                            <div class="overlay">Andy Xu (12)</div>
+                        </div>
+                        <span class="subposition-title">Co-President</span>
                     </div>
-                    <span class="subposition-title">Co-President</span>
-                </div> 
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="img-container">
-                        <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
-                        <div class="overlay">Natalie Chang (12)</div>
+                    <div class="col-12 col-md-5 col-lg-3">
+                        <div class="img-container">
+                            <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
+                            <div class="overlay">Natalie Chang (12)</div>
+                        </div>
+                        <span class="subposition-title">Co-President</span>
                     </div>
-                    <span class="subposition-title">Co-President</span>
+                    <div class="col-12 col-md-5 col-lg-3">
+                        <div class="img-container">
+                            <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
+                            <div class="overlay">Eric Chow (11)</div>
+                        </div>
+                        <span class="subposition-title">Vice President</span>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="img-container">
-                        <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
-                        <div class="overlay">Eric Chow (11)</div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-5 col-lg-3">
+                        <div class="img-container">
+                            <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
+                            <div class="overlay">Ian Ho (12)</div>
+                        </div>
+                        <span class="subposition-title">Secretary/Treasurer</span>
                     </div>
-                    <span class="subposition-title">Vice President</span>
+                    <div class="col-12 col-md-5 col-lg-3">
+                        <div class="img-container">
+                            <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
+                            <div class="overlay">Spencer Chang (11)</div>
+                        </div>
+                        <span class="subposition-title">Field Day Head</span>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-3">
+                        <div class="img-container">
+                            <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
+                            <div class="overlay">Kendrick Brown (12)</div>
+                        </div>
+                        <span class="subposition-title">Frolic Head</span>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-5 col-lg-3">
+                        <div class="img-container">
+                            <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
+                            <div class="overlay">Tingjen Heish (11)</div>
+                        </div>
+                        <span class="subposition-title">Spirit Week Head</span>
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="img-container">
-                        <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
-                        <div class="overlay">Ian Ho (12)</div>
+            <div class="member-section">
+                <div class="container">
+                    <h2 class="sub-heading">Members</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h4>Activities</h4>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4>Political</h4>
+                        </div>
                     </div>
-                    <span class="subposition-title">Secretary/Treasurer</span>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="img-container">
-                        <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
-                        <div class="overlay">Spencer Chang (11)</div>
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <div class="members">
+                                Amanda Ding<br>
+                                Amber Wu<br>
+                                Angela Wang<br>
+                                Annie Huang<br>
+                                Camryn Rowe<br>
+                                Cindy Li<br>
+                                Danielle Lin<br>
+                                Emma Liu<br>
+                                Emma Wu<br>
+                                Erica Chiang<br>
+                                Gloria Lee<br>
+                                Gretal Tang<br>
+                                Ian Huang<br>
+                                Jesse Whiteford<br>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="members">
+                                Julie Oh<br>
+                                Karen Lee<br>
+                                Katrina Hsu<br>
+                                Kristin Chang<br>
+                                Lana Lee<br>
+                                Maddie Stanley-Rainbow<br>
+                                Megan Wei<br>
+                                Nicole Scheidel<br>
+                                Rachel Su<br>
+                                Selina Lu<br>
+                                Stephen Beck<br>
+                                Wilton Hsu<br>
+                                Zoe Shong<br>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="members">
+                                Abbey Foreman<br>
+                                Alice Chiang<br>
+                                Andrew Cheng<br>
+                                Annabel Chang<br>
+                                Celine Yung<br>
+                                Chloe Mann<br>
+                                Emily Wang<br>
+                                Enoch Toh<br>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="members">
+                                Erin Stanley Rainbow<br>
+                                Jasmine Liou<br>
+                                Jay Ann Kan<br>
+                                Josh Wah<br>
+                                Joy Taw<br>
+                                Katie Chu<br>
+                                Laura Hwa<br>
+                                Megan Tang<br>
+                            </div>
+                        </div>
                     </div>
-                    <span class="subposition-title">Field Day Head</span>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="img-container">
-                        <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
-                        <div class="overlay">Kendrick Brown (12)</div>
-                    </div>
-                    <span class="subposition-title">Frolic Head</span>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="img-container">
-                        <img src="img/portrait/andy.jpeg" class="img-fluid rounded" alt="portrait">
-                        <div class="overlay">Tingjen Heish (11)</div>
-                    </div>
-                    <span class="subposition-title">Spirit Week Head</span>
-                </div>
-            </div>
+
         </div>
         </div>
     </section>
 
-    <footer class="py-5" id="media">
+    <section class="pt-5" id="contact">
+        <div class="container">
+            <h1 class="mb-2">Contact Us</h1>
+            <p>Questions, concerns, or comments? Use the form below to contact us, be sure to use a valid email!</p>
+            <form method="POST" action="https://formspree.io/21spencerc@tas.tw">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="hpot">
+                            <label>Leave this field empty: <input name="_gotcha"></label>
+                            =</div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputEmail" placeholder="*Name" required="true">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="inputTItle" placeholder="*Email" required="true">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputEmail" placeholder="*Subject" required="true">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="form-group">
+                            <textarea class="form-control" id="inputMsg" placeholder="*Message" rows="5" required="true"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <button type="submit" class="btn btn-success w-100">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-5">
         <div class="container">
             <p>Keep in Touch!</p>
             <span>
