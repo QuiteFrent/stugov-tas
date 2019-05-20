@@ -22,16 +22,18 @@ html {
   scroll-behavior: smooth;
 
   .navbar-custom {
-    position: absolute;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    z-index: 1000;
+    position: fixed;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: transparent;
     font-family: 'Open Sans', sans-serif;
+    transition: 0.15s ease-in-out;
 
     .navbar-brand {
       img {
-        width: 48px;
-        height: 48px;
+        width: 32px;
+        height: 32px;
       }
     }
 
@@ -43,10 +45,11 @@ html {
       font-size: 18px;
 
       .nav-link {
-        color: gainsboro;
+        color: white;
+        font-size: 14px;
 
         &:hover {
-          color: lightgreen;
+          color: orange;
         }
       }
     }
@@ -55,7 +58,7 @@ html {
 
   @media (max-width: 768px) {
     .navbar-custom {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: #005519;
     }
   }
 
@@ -110,25 +113,26 @@ html {
   #about {
     background-color: white;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 16px;
+
+    .about-text {
+      
+      h1 {
+        font-weight: bolder;
+        line-height: 2rem;
+        border-bottom: 0px solid black;
+      }
+
+      p {
+        font-weight: 200;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    }
 
     .row {
-      margin-bottom: 16px;
-      .about-text {
-        h1 {
-          font-weight: bolder;
-          line-height: 2rem;
-          border-bottom: 0px solid black;
-          font-family: 'Lora', sans-serif;
-        }
-
-        p {
-          font-weight: 200;
-          font-size: 1.1rem;
-          line-height: 1.5rem;
-          margin-bottom: 7rem;
-          font-family: "Open Sans", sans-serif;
-        }
-      }
 
       .content-heading {
         font-family: "Playfair Display", sans-serif;
@@ -138,12 +142,33 @@ html {
       .btn-about {
         font-family: "Vollkorn", sans-serif;
         background-color: pink;
-        color: rgb(1, 63, 1);
+        color: black;
         font-weight: bolder;
       }
 
     }
 
+  }
+
+  #announcements {
+    text-align: center;
+    padding-bottom: 3.5rem;
+
+    .event {
+      border-bottom: darkgray solid 1px;
+      padding: 2rem 0px;
+      font-family: 'Noto Serif SC', sans-serif;
+
+      .title {
+        font-size: 2.3rem;
+        font-weight: bolder;
+      }
+
+      .body {
+        font-size: 0.9rem;
+        font-weight: lighter;
+      }
+    }
   }
 
   #team {
@@ -156,9 +181,10 @@ html {
     .main-heading {
       letter-spacing: -1px;
       font-weight: 900;
-      border-bottom: 1px solid #05386d 
+      border-bottom: 1px solid #05386d
     }
-    .sub-heading{
+
+    .sub-heading {
       font-size: 2rem;
       font-weight: bold;
     }
@@ -215,13 +241,16 @@ html {
         color: black;
       }
     }
-    .member-section{
+
+    .member-section {
       color: darkblue;
-      h4{
+
+      h4 {
         font-weight: bolder;
         border-bottom: 1px solid black;
       }
-      .members{
+
+      .members {
         font-weight: bold;
 
       }
@@ -236,18 +265,21 @@ html {
 
   }
 
-  #contact{
+  #contact {
     font-family: 'Roboto', sans-serif;
     color: white;
     text-align: center;
     background-color: #1f1f1f;
-    form{
-      .row{
+
+    form {
+      .row {
         justify-content: center;
-        textarea{
+
+        textarea {
           min-height: 180px;
         }
-        .hpot{
+
+        .hpot {
           display: none;
         }
       }
@@ -274,9 +306,10 @@ html {
     }
   }
 
-  .popover{
+  .popover {
     background-color: pink;
-    .popover-body{
+
+    .popover-body {
       color: black;
     }
   }

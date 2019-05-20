@@ -20,15 +20,14 @@
 
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display|Cutive|Noto+Serif+TC|Sintony|Arvo|Lato|Karla|Montserrat|Roboto|Josefin+Sans|Vollkorn|Oxygen|Lora|Ubuntu"
+        href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display|Cutive|Noto+Serif+SC|Sintony|Arvo|Lato|Karla|Montserrat|Roboto|Josefin+Sans|Vollkorn|Oxygen|Lora|Ubuntu"
         rel="stylesheet">
 
     <title>TAS Student Government</title>
 </head>
 
 <body>
-    <!-- Embed Facebook -->
-    <nav class="navbar navbar-expand-md navbar-custom w-100">
+    <nav class="navbar navbar-expand-md navbar-custom w-100" id="navbar">
         <a class="navbar-brand" href="https://www.facebook.com/tasstugov">
             <img src="img/icon.jpg" alt="Icon">
         </a>
@@ -41,14 +40,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item mr-3">
+                <li class="nav-item mr-2">
                     <a class="nav-link" href="#about">About Us</a>
                 </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#team">Meet the Team</a>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#announcements">Announcements</a>
                 </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#poetry">Petitions</a>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#team">Meet the Team</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact Us</a>
@@ -64,7 +63,8 @@
                     <h1 class="main-heading">Student Government</h1>
                     <h5 class="sub-heading font-weight-light font-italic">of Taipei American School</h5>
                     <div class="container-fluid">
-                        <button type="button" class="btn btn-primary btn-about" onClick="document.getElementById('about').scrollIntoView();">Learn More</button>
+                        <button type="button" class="btn btn-primary btn-about"
+                            onClick="document.getElementById('about').scrollIntoView();">Learn More</button>
                     </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
     <section id="about" class="py-3">
         <div class="container">
             <div class="about-text mb-5">
-                <h1 class="w-100 mt-5">Our Mission</h1>
+                <h1 class="w-100 mt-5">By Students, For Students</h1>
                 <div class="row justify-content-center">
 
                     <p class="col-7">"Student Government is an organization that works to achieve the goals set forth in
@@ -83,6 +83,31 @@
                         bring the school closer together"</p>
                 </div>
             </div>
+            <section id="announcements">
+                <div class="container">
+                    <div class="event" style="border-top: darkgray solid 1px;">
+                        <h1 class="title">New Petition Website</h1>
+                        <p class="body">Don’t miss an opportunity to take part in building community this year. Come be
+                            a part of the Student Government family, meet our members and learn how we can help make
+                            your vision for TAS a reality. Or enjoy a snack with some friends. Keep an eye out for our
+                            events with Facebook and Instagram, and by signing up for our newsletter. </p>
+                    </div>
+                    <div class="event">
+                        <h1 class="title">Easter Event!</h1>
+                        <p class="body">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet
+                            fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res
+                            quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium
+                            totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+                    </div>
+                    <div class="event">
+                        <h1 class="title">More Stuff</h1>
+                        <p class="body">Don’t miss an opportunity to take part in building community this year. Come be
+                            a part of the Student Government family, meet our members and learn how we can help make
+                            your vision for TAS a reality. Or enjoy a snack with some friends. Keep an eye out for our
+                            events with Facebook and Instagram, and by signing up for our newsletter. </p>
+                    </div>
+                </div>
+            </section>
             <div class="row">
                 <div class="col-md-6">
                     <img class="img-fluid rounded" src="img/spirit_week.jpg" alt="Spirit Week" />
@@ -358,9 +383,8 @@
     </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
