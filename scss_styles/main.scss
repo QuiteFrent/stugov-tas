@@ -110,7 +110,6 @@ html {
   #about {
     background-color: white;
     text-align: center;
-    padding-top: 2rem;
 
     .row {
       margin-bottom: 16px;
@@ -120,7 +119,6 @@ html {
           line-height: 2rem;
           border-bottom: 0px solid black;
           font-family: 'Lora', sans-serif;
-          padding-bottom: 1.5rem;
         }
 
         p {
@@ -149,10 +147,11 @@ html {
   }
 
   #team {
-    background: #5cd895;
+    background-color: #5cd895;
     color: #05386d;
     text-align: center;
     font-family: "Montserrat", sans-serif;
+    transition: 0.3s ease-out;
 
     .main-heading {
       letter-spacing: -1px;
