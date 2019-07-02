@@ -9,6 +9,10 @@
 
 html {
 
+  .btn{
+    border: transparent;
+  }
+
   a {
     text-decoration: none;
     color: inherit;
@@ -107,6 +111,10 @@ html {
       font-size: 18px;
       font-weight: 1000;
       font-family: "Montserrat", sans-serif;
+
+      &:hover {
+        background-color: rgb(0, 72, 0);
+      }
     }
   }
 
@@ -117,7 +125,7 @@ html {
     margin-bottom: 16px;
 
     .about-text {
-      
+
       h1 {
         font-weight: bolder;
         line-height: 2rem;
