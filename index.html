@@ -60,13 +60,15 @@
     <div class="jumbotron jumbotron-fluid" id="intro">
         <div class="container">
             <div class="intro-text">
-                <h2 style="font-size: 3vh">2019-2020</h1>
+                <div class="animated fadeInUp">
+                    <h2 style="font-size: 3vh">2019-2020</h2>
                     <h1 class="main-heading">Student Government</h1>
                     <h5 class="sub-heading font-weight-light font-italic">of Taipei American School</h5>
-                    <div class="container-fluid">
-                        <button type="button" class="btn btn-primary btn-about"
-                            onClick="document.getElementById('about').scrollIntoView();">Learn More</button>
-                    </div>
+                </div>
+                <div class="container-fluid animated fadeInUp delay-05s">
+                    <button type="button" class="btn btn-primary btn-about"
+                        onClick="document.getElementById('about').scrollIntoView();">Learn More</button>
+                </div>
             </div>
         </div>
 
@@ -74,7 +76,7 @@
 
     <section id="about" class="py-3">
         <div class="container">
-            <div class="about-text mb-5">
+            <div class="about-text mb-5 animated fadeIn">
                 <h1 class="w-100 mt-5">By Students, For Students</h1>
                 <div class="row justify-content-center">
                     <p class="col-7">Student Government is an organization that works to achieve the goals set forth in
@@ -95,8 +97,7 @@
                                 <button type="button" class="btn btn-primary btn-about mt-3 w-100" data-container="body"
                                     data-toggle="popover" data-placement="bottom"
                                     data-content="Unfortunately we are no longer accepting applications for 2019-2020 StuGov, past applications can be found here: <a href='https://docs.google.com/document/d/1ETW-OfmwIlJAdvIpwx9WaNBtN8oTXAYfy9qmSFwYuPk/edit?usp=sharing'><strong>link</strong></a>"
-                                    data-html=true>Apply
-                                    Now!</button>
+                                    data-html=true>View Application</button>
                             </div>
                         </div>
                 </div>
@@ -148,7 +149,8 @@
     <section id="team" class="py-5">
         <div class="container justify-content-center pb-5">
             <h1 class="main-heading">Meet the Team!</h1>
-            <p>Student Government consists of two branches: Political and Activities. The political branch focuses on
+            <p style="font-weight: 700;">Student Government consists of two branches: Political and Activities. The
+                political branch focuses on
                 addressing student concerns and issues; this year we will be focusing on two main initiatives: Wellness
                 and Going Green. The activities branch plans and organizes major student activities throughout the
                 school year, such as Spirit Week, Frolic, and Field Day. All StuGov officers and members work on

@@ -1593,8 +1593,8 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
   }
 
   to {
@@ -3566,6 +3566,11 @@
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+
+.animated.delay-05s {
+  -webkit-animation-delay: 0.20s;
+  animation-delay: 0.20s;
 }
 
 .animated.delay-1s {
