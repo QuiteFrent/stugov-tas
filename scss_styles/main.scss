@@ -36,6 +36,7 @@ html {
 
     .navbar-brand {
       img {
+        border-radius: 25px;
         width: 32px;
         height: 32px;
       }
@@ -62,7 +63,7 @@ html {
 
   @media (max-width: 768px) {
     .navbar-custom {
-      background-color: #005519;
+      background-color: #003600;
     }
   }
 
@@ -70,8 +71,8 @@ html {
     background: linear-gradient(rgba(70, 32, 67, 0.8), rgba(70, 32, 67, 0.8)), url(../img/background.jpg);
     margin: 0;
 
-
     /* Center and scale the image nicely */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

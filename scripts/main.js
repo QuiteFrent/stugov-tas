@@ -14,7 +14,7 @@ $(".overlay").hover(
 $(function () {
   if ($(window).width() > 768) {
     if ($(window).scrollTop() > $(".navbar-custom").height()) {
-      $('.navbar-custom').css("background-color", "#005519");
+      $('.navbar-custom').css("background-color", "#003600");
     } else {
       $('.navbar-custom').css("background-color", "transparent");
     }
@@ -24,7 +24,7 @@ $(function () {
 $(window).bind('scroll', function () {
   if ($(window).width() > 768) {
     if ($(window).scrollTop() > $(".navbar-custom").height()) {
-      $('.navbar-custom').css("background-color", "#005519");
+      $('.navbar-custom').css("background-color", "#003600");
     } else {
       $('.navbar-custom').css("background-color", "transparent");
     }
