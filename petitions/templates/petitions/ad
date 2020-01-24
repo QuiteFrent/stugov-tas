@@ -1,0 +1,12 @@
+    {% for post in posts %}
+        <div>
+            <h1>{{ post.title }}</h1>
+            {{ post.body }}
+            {{ post.author }}
+            <ul>
+                {% for comment in post.comments.all %}
+                    <li>{{ comment.body }}, Author:{{ comment.author }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}

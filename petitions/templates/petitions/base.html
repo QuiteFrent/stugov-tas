@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block style %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "petitions/styles/main.css" %}">
+{% endblock style %}
+
+{% block main %}
+
+    <div class="jumbotron jumbotron-fluid" id="background">
+    </div>
+    <nav class="navbar navbar-expand-md navbar-custom" id="navbar">
+        <a class="navbar-brand" href="https://www.facebook.com/tasstugov">
+            <span><img src="{% static "petitions/images/icon.jpg" %}" alt="Icon"></span>
+            <span class=" text">Be the Change</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                style="outline: 0; border: none;">
+        <span class="navbar-toggler-icon w-100 h-100">
+            <i class="fas fa-bars fa-lg"></i>
+        </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="/accounts/login">Log in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/accounts/register">Signup</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+{% endblock main %}
+
+{% block script %}
+    {% load static %}
+    <script src="{% static "petitions/scripts/main.js" %}"></script>
+{% endblock script %}

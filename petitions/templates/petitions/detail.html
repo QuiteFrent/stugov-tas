@@ -1,0 +1,32 @@
+{% extends 'petitions/base.html' %}
+
+{% block content %}
+    <div class="container" id="detail">
+        <h1 class="py-5">{{ post.title }}</h1>
+        <div class="row">
+        </div>
+        <div class="row body">
+            <div class="col-7">
+                <div class="image pb-2">
+                </div>
+                {{ post.body }}
+            </div>
+            <div class="col-5">
+            </div>
+            {{ post.author }}
+            <div class="row">
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ comment_form.as_table }}
+                    <button type="submit">Submit</button>
+                </form>
+                <ul>
+                    {% for comment in post.comments.all %}
+                        {% if comment.status == 'a' or comment.author == current_user %}
+                            <li>{{ comment.body }}, Author:{{ comment.author }}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+{% endblock content %}

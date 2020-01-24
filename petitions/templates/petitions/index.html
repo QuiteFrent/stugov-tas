@@ -1,0 +1,74 @@
+{% extends 'petitions/base.html' %}
+
+{% block style %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "petitions/styles/main.css" %}">
+{% endblock style %}
+
+{% block content %}
+    <main>
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-12 col-md-7 offset-md-1">
+                    {% for post in posts %}
+                        <div class="row post py-2 px-1" id="{{ post.id }}">
+
+                            <div class="col-8 p-2">
+                                <h5 class="title">{{ post.title }}</h5>
+                                <h5 id="votes">{{ post.votes_count }}</h5>
+                                <p class="author text-muted">by {{ post.author }}</p>
+                                <div class="content">
+                                    <p>{{ post.body }}</p>
+                                </div>
+                            </div>
+
+                            <div class="col-4 p-2">
+                                <div class="image"></div>
+                            </div>
+
+                            <div class="toolbar d-flex p-2">
+                                <a href="#" class="upvoteButton" data-post="{{ post.id }}">
+                                    <i class="fas fa-arrow-up"></i>
+                                    <span>Support</span>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-share"></i>
+                                    <span>Share</span>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-comments"></i>
+                                    <span>Comment</span>
+                                </a>
+                            </div>
+
+                            <a href="{{ post.pk }}" class="post-link"></a>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <div class="col-12 col-md-3 banners">
+                    <div class="row">
+                        <div class="col-12 rounded">
+                            <div class="banner">
+                                <div class="banner-image p-2"></div>
+                                <p class="content p-2">A community dedicated to all things web development: both
+                                    front-end and back-end. For more design-related questions, try /r/web_design.</p>
+                                <a href="{% url 'petitions:create' %}">
+                                    <button class="btn btn-primary my-2">START PETITION</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 rounded">
+                            <div class="banner">
+                                <div class="banner-image p-2"></div>
+                                <p class="content p-2">A community dedicated to all things web development: both
+                                    front-end and back-end. For more design-related questions</p>
+                                <button class="btn btn-primary my-2">SIGN UP</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock content %}

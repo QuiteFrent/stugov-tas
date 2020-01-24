@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+
+{% block style %}
+    {% load sass_tags %}
+    <link rel="stylesheet" href="{% sass_src 'accounts/styles/main.scss' %}">
+{% endblock style %}
+
+{% block main %}
+    {% load widget_tweaks %}
+    <div class="container">
+        <div class="row">
+            {% load static %}
+            <img src="{% static 'accounts/images/icon.jpg' %}" alt="Logo">
+        </div>
+        <div class="row">
+            <div class="col-7 form">
+                <h3 class="heading">Welcome Back!</h3>
+                {% if form.errors %}
+                    <div class="errorlist text-center">
+                        {% for field in form %}
+                            {% if field.errors %}
+                                {{ field.errors | striptags }}
+                            {% endif %}
+                        {% endfor %}
+                        {{ form.non_field_errors | striptags }}
+                    </div>
+                {% endif %}
+                <form action="." method="post">{% csrf_token %}
+                    <div class="form-group">
+                        <label for="{{ form.email.id_for_label }}">Email</label>
+                        {{ form.email | add_class:"form-control" }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.password.id_for_label }}">Password</label>
+                        {{ form.password | add_class:"form-control" }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.password2.id_for_label }}">Confirm Password</label>
+                        {{ form.password2 | add_class:"form-control" }}
+                    </div>
+                    <div class="form-group">
+                        <span>Already have an account? <a href="{% url 'login' %}">Login</a> here</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+
