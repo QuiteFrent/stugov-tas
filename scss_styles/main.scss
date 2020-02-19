@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: Simplifica;
-  src: url(../img/simplifica.ttf);
+  src: url(../../../stugov-tas/img/simplifica.ttf);
 }
 
 html {
@@ -68,7 +68,7 @@ html {
   }
 
   #intro {
-    background: linear-gradient(rgba(70, 32, 67, 0.8), rgba(70, 32, 67, 0.8)), url(../img/background.jpg);
+    background: linear-gradient(rgba(70, 32, 67, 0.8), rgba(70, 32, 67, 0.8)), url(../../../stugov-tas/img/background.jpg);
     margin: 0;
 
     /* Center and scale the image nicely */
@@ -182,7 +182,7 @@ html {
   }
 
   #team {
-    background-color: #5cd895;
+    background-color: #1ED171;
     color: #05386d;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -314,6 +314,7 @@ html {
         cursor: pointer;
       }
     }
+    
   }
 
   .popover {
