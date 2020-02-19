@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
 
 {% block style %}
-    {% load static %}
-    <link rel="stylesheet" href="{% static "petitions/styles/main.css" %}">
+    <link rel="stylesheet" href="{% sass_src 'petitions/styles/main.scss' %}">
 {% endblock style %}
 
 {% block main %}
@@ -10,7 +11,7 @@
     <div class="jumbotron jumbotron-fluid" id="background">
     </div>
     <nav class="navbar navbar-expand-md navbar-custom" id="navbar">
-        <a class="navbar-brand" href="https://www.facebook.com/tasstugov">
+        <a class="navbar-brand" href="/petitions">
             <span><img src="{% static "petitions/images/icon.jpg" %}" alt="Icon"></span>
             <span class=" text">Be the Change</span>
         </a>
@@ -24,10 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mr-3">
-                    <a class="nav-link" href="/accounts/login">Log in</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/accounts/register">Signup</a>
+                    <a class="nav-link" href="/accounts/login">Welcome, {{ user.email }}</a>
                 </li>
             </ul>
         </div>

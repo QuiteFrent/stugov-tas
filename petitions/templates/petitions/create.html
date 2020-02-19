@@ -1,9 +1,34 @@
 {% extends 'petitions/base.html' %}
+{% load widget_tweaks %}
 
 {% block content %}
-    <form action="." method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">fsafsa</button>
-    </form>
+    <div class="container" id="create">
+        <div class="row">
+            <div class="col-8">
+                <form enctype="multipart/form-data" action="." method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="{{ post_form.title.id_for_label }}">Title:</label>
+                        {{ post_form.title | add_class:"form-control" }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ post_form.goal.id_for_label }}">Goal:</label>
+                        {{ post_form.goal | add_class:"form-control" }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ post_form.body.id_for_label }}">Body:</label>
+                        {{ post_form.body | add_class:"form-control" }}
+                    </div>
+                    {{ image_form_set.management_form }}
+                    {% for image_form in image_form_set %}
+                        <div class="form-group">
+                            <label for="{{ image_form.image.id_for_label }}">Image:</label>
+                            {{ image_form.image }}
+                        </div>
+                    {% endfor %}
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock content %}

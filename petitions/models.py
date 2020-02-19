@@ -11,6 +11,7 @@ STATUS_CHOICES = [
 class Post(models.Model):
     title = models.CharField(max_length=300)
     body = models.TextField(max_length=10000)
+    goal = models.IntegerField(default=100)
     author = models.CharField(max_length=300, default="Anonymous")
     status = models.CharField(max_length=1, choices=STATUS_CHOICES, default='w')
     created_at = models.DateTimeField(auto_now_add=True, null=True)
@@ -21,6 +22,11 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class PostImage(models.Model):
+    post = models.ForeignKey(Post, related_name='image', on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='uploads/%Y/%m/%d/', verbose_name='Image')
 
 
 class Comment(models.Model):

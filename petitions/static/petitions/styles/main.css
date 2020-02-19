@@ -1,1 +1,203 @@
-html{height:100%}html body{height:100%}html body .btn{border:transparent}html body a{text-decoration:none;color:inherit;display:block}html body a:hover{text-decoration:none;color:inherit}html body #background{background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),url(../images/background.jpg);background-size:cover;background-position:bottom;height:110px;margin:0}html body .navbar-custom{background-color:white;border-bottom:1px solid #dbd9db}html body .navbar-custom img{height:48px;width:48px;border-radius:25px}html body .navbar-custom .text{font-family:"Farro", sans-serif}html body .navbar-custom button{font-family:"Lato", sans-serif;font-weight:bold;width:7em}html body main{background-color:#dae0e6;min-height:78%}html body main .container .post{position:relative;background-color:white;border:1px #ccc solid;border-radius:4px;margin-bottom:10px;transition:0.1s ease-in}html body main .container .post:hover{filter:drop-shadow(2px 2px 6px rgba(0,0,0,0.35))}html body main .container .post .col-8{font-family:"Ubuntu", "Open Sans", sans-serif}html body main .container .post .col-8 .title{font-weight:bolder;margin-bottom:5px}html body main .container .post .col-8 .author{font-size:14px;margin-bottom:10px}html body main .container .post .col-8 .content{font-size:15px;max-height:115px;overflow:hidden;text-overflow:ellipsis;-webkit-mask-image:linear-gradient(180deg, #000 60%, transparent);mask-image:linear-gradient(180deg, #000 60%, transparent)}html body main .container .post .col-4 .image{width:100%;height:190px;background-image:url(../images/cat.jpg);background-position:center;background-size:cover;background-clip:content-box}html body main .container .post .toolbar{z-index:3}html body main .container .post .toolbar a{font-size:14px;color:green;transition:0.1s;padding:0 5px;border-radius:3px}html body main .container .post .toolbar a:hover{background:lightgray}html body main .container .post .post-link{position:absolute;display:block;top:0;bottom:0;left:0;right:0;text-indent:-9999px;z-index:2}html body main .container .banners{background-clip:content-box}html body main .container .banners .banner{background-clip:content-box;background-color:white;text-align:center;margin-bottom:10px;border:1px #ccc solid;border-radius:4px}html body main .container .banners .banner:hover{filter:drop-shadow(2px 2px 6px rgba(0,0,0,0.35))}html body main .container .banners .banner .banner-image{height:200px;background-image:url(../images/cat.jpg);background-position:center;background-size:cover;background-clip:content-box}html body main .container .banners .banner .content{font-size:16px;font-family:"Lato", sans-serif;overflow-wrap:break-word;margin-bottom:0}html body main .container .banners .banner button{font-size:14px;font-family:"Open Sans", sans-serif;font-weight:bolder;width:95%;background:green}html body #detail h1{text-align:center}html body #detail .body{font-size:1.25rem}html body #detail .image{width:100%;height:400px;background-image:url(../images/cat.jpg);background-position:center;background-size:cover;background-clip:content-box}
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+}
+html body .btn {
+  border: transparent;
+}
+html body a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+html body a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+html body #background {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/background.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 110px;
+  margin: 0;
+}
+html body .navbar-custom {
+  background-color: white;
+  border-bottom: 1px solid #dbd9db;
+}
+html body .navbar-custom img {
+  height: 48px;
+  width: 48px;
+  border-radius: 25px;
+}
+html body .navbar-custom .text {
+  font-family: "Farro", sans-serif;
+}
+html body .navbar-custom button {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  width: 7em;
+}
+html body main {
+  background-color: #dae0e6;
+  min-height: 78%;
+}
+html body main .container .post {
+  position: relative;
+  background-color: white;
+  border: 1px #cccccc solid;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: 0.1s ease-in;
+}
+html body main .container .post:hover {
+  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.35));
+}
+html body main .container .post .col-8 {
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+}
+html body main .container .post .col-8 .title {
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+html body main .container .post .col-8 .author {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+html body main .container .post .col-8 .content {
+  font-size: 15px;
+  max-height: 115px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+  mask-image: linear-gradient(180deg, #000 60%, transparent);
+}
+html body main .container .post .col-4 .image {
+  width: 100%;
+  height: 190px;
+  background-image: url(../images/cat.jpg);
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+}
+html body main .container .post .toolbar {
+  z-index: 3;
+}
+html body main .container .post .toolbar a {
+  font-size: 14px;
+  color: green;
+  transition: 0.1s;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+html body main .container .post .toolbar a:hover {
+  background: lightgray;
+}
+html body main .container .post .post-link {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-indent: -9999px;
+  z-index: 2;
+}
+html body main .container .banners {
+  background-clip: content-box;
+}
+html body main .container .banners .banner {
+  background-clip: content-box;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px #cccccc solid;
+  border-radius: 4px;
+}
+html body main .container .banners .banner:hover {
+  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.35));
+}
+html body main .container .banners .banner .banner-image {
+  height: 200px;
+  background-image: url(../images/cat.jpg);
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+}
+html body main .container .banners .banner .content {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+html body main .container .banners .banner button {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  width: 95%;
+  background: green;
+}
+html body #detail h1 {
+  text-align: center;
+}
+html body #detail .body {
+  font-size: 1.25rem;
+}
+html body #detail .image {
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/cat.jpg);
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+}
+html body #detail .btn-custom {
+  background-color: #ec2c22;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+html body #detail .votes {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+html body #detail .no-comments {
+  font-size: 18px;
+}
+html body #detail .custom-comment {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+html body #detail .custom-comment .author {
+  font-size: 18px;
+  font-weight: bolder;
+}
+html body #detail .custom-comment .date {
+  font-size: 12px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+html body #detail .custom-comment .content {
+  font-size: 15px;
+  padding: 5px 0;
+}
+html body #create .row {
+  justify-content: center;
+  background-color: white;
+  margin-top: 20px;
+}
+html body #create .row form {
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

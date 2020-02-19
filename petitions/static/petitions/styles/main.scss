@@ -187,6 +187,66 @@ html {
         background-size: cover;
         background-clip: content-box;
       }
+
+      .btn-custom {
+        background-color: #ec2c22;
+        color: white;
+        width: 100%;
+        border-radius: 5px;
+        font-weight: bolder;
+        margin: 10px 0;
+      }
+
+      .votes {
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        font-size: 24px;
+        //border: 1px solid green;
+        // border-radius: 5px;
+        //background: #98ff98;
+      }
+
+      .no-comments {
+        font-size: 18px;
+      }
+
+      .custom-comment {
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        position: relative;
+
+        .author {
+          font-size: 18px;
+          font-weight: bolder;
+        }
+
+        .date {
+          font-size: 12px;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+        }
+
+        .content {
+          font-size: 15px;
+          padding: 5px 0;
+        }
+      }
+    }
+
+    #create {
+      .row {
+        justify-content: center;
+        background-color: white;
+        margin-top: 20px;
+
+        form {
+          width: 100%;
+        }
+      }
     }
 
   }
