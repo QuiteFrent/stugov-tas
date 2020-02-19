@@ -68,7 +68,11 @@ html {
   }
 
   #intro {
+<<<<<<< HEAD:scss_styles/main.scss
+    background: linear-gradient(rgba(70, 32, 67, 0.8), rgba(70, 32, 67, 0.8)), url(../../../stugov-tas/img/background.jpg);
+=======
     background: linear-gradient(rgba(70, 32, 67, 0.8), rgba(70, 32, 67, 0.8)), url('../images/background.jpg');
+>>>>>>> 2c996d25811ab9c0ee622b669665712144743e25:static/styles/main.scss
     margin: 0;
 
     /* Center and scale the image nicely */
@@ -314,6 +318,7 @@ html {
         cursor: pointer;
       }
     }
+    
   }
 
   .popover {
