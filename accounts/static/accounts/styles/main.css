@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+}
+html body {
+  font-family: "Roboto", "Lato", sans-serif;
+  background-color: #4a46a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body .container {
+  margin-top: 110px;
+}
+html body .container .row {
+  justify-content: center;
+}
+html body .container .row .errorlist {
+  color: red;
+  font-size: 14px;
+  padding: 10px 0px;
+}
+html body .container .row img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+html body .container .row .form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 25px;
+}
+html body .container .row .form .heading {
+  text-align: center;
+}
+html body .container .row .form button {
+  background-color: #36af59;
+}
+html body .container .row .form span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: gray;
+}
+html body .container .row .form span a {
+  color: blue;
+}
+
+/*# sourceMappingURL=main.css.map */

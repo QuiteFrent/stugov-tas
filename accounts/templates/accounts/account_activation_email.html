@@ -1,0 +1,8 @@
+{% autoescape off %}
+Hi, {{ user.email }},
+    
+Thanks for joining our Petition Website!
+Your account has successfully created. Please click the link below to activate your account:
+
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}
