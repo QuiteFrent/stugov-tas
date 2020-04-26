@@ -1,10 +1,5 @@
 {% extends 'petitions/base.html' %}
 
-{% block style %}
-    {% load static %}
-    <link rel="stylesheet" href="{% static "petitions/styles/main.css" %}">
-{% endblock style %}
-
 {% block content %}
     <main>
         <div class="container pt-4">
@@ -53,7 +48,7 @@
                                 <div class="banner-image p-2"></div>
                                 <p class="content p-2">A community dedicated to all things web development: both
                                     front-end and back-end. For more design-related questions, try /r/web_design.</p>
-                                <a href="{% url 'petitions:create' %}">
+                                <a href="https://forms.gle/rh8qRcsJJXunAfte7">
                                     <button class="btn btn-primary my-2">START PETITION</button>
                                 </a>
                             </div>

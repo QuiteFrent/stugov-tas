@@ -10,6 +10,10 @@ html {
       margin-top: 110px; }
       html body .container .row {
         justify-content: center; }
+        html body .container .row .errorlist {
+          color: red;
+          font-size: 14px;
+          padding: 10px 0px; }
         html body .container .row img {
           width: 100px;
           height: 100px;

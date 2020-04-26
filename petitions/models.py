@@ -20,6 +20,9 @@ class Post(models.Model):
     def votes_count(self):
         return self.votes.all().count()
 
+    def progress(self):
+        return self.votes_count()/self.goal * 100
+
     def __str__(self):
         return self.title
 

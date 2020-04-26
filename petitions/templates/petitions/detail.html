@@ -1,55 +1,61 @@
 {% extends 'petitions/base.html' %}
 
 {% block content %}
-    {% load widget_tweaks %}
+{% load widget_tweaks %}
 
-    <div class="container" id="detail">
-        <h1 class="pt-5">{{ post.title }}</h1>
-        <h5 class="text-center">by {{ post.author }}</h5>
+<div class="container" id="detail">
+    <h1 class="pt-3">{{ post.title }}</h1>
+    <h5 class="text-center">by {{ post.author }}</h5>
+    <div class="row body">
+        <div class="col-12 col-md-7">
+            <div class="image pb-2">
+            </div>
+            {{ post.body }}
+        </div>
+        <div class="col-12 col-md-5">
+            <button class="btn btn-custom upvoteButton" data-post={{ post.pk }}><i class="fas fa-arrow-up"></i>
+                Support This Petition
+            </button>
+            <button class="btn btn-custom"><i class="fas fa-link"></i> Share Link</button>
+            <div class="votes"><strong><span id="votes_count">{{ post.votes_count }}</span> Have
+                    Signed.</strong>
+                Let's get to {{ post.goal }}!
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+                    style="width: {{post.progress}}%">
+                </div>
+            </div>
+
+
+            <form method="POST" class="mt-3">
+                {% csrf_token %}
+                <p2>Comments:</p2>
+                {% if show_comments %}
+                {% for c in post.comments.all %}
+                {% if c.status == 'a' or c.author == current_user %}
+                <div class="custom-comment">
+                    <div>
+                        <span class="author">{{ c.author }}</span>
+                        <span class="date">{{ c.created_at }}</span>
+                    </div>
+                    <div class="content">{{ c.body }}</div>
+                </div>
+                {% endif %}
+                {% endfor %}
+                {% else %}
+                <div class="no-comments">There are no comments currently</div>
+                {% endif %}
+                {{ comment_form.body | add_class:"form-control" }}
+                {{ comment_form.author }}
+                {{ comment_form.post }}
+                <button type="submit" class="form-control">Submit</button>
+            </form>
+            <ul>
+
+            </ul>
+        </div>
         <div class="row">
         </div>
-        <div class="row body">
-            <div class="col-7">
-                <div class="image pb-2">
-                </div>
-                {{ post.body }}
-            </div>
-            <div class="col-5">
-                <button class="btn btn-custom upvoteButton" data-post={{ post.pk }}><i class="fas fa-arrow-up"></i>
-                    Support This Petition
-                </button>
-                <button class="btn btn-custom"><i class="fas fa-link"></i> Share Link</button>
-                <div class="votes"><strong><span id="votes_count">{{ post.votes_count }}</span> Have Signed.</strong>
-                    Let's get to {{ post.goal }}!
-                </div>
-                <form method="POST" class="mt-3">
-                    {% csrf_token %}
-                    <p2>Comments:</p2>
-                    {% if show_comments %}
-                        {% for c in post.comments.all %}
-                            {% if c.status == 'a' or c.author == current_user %}
-                                <div class="custom-comment">
-                                    <div>
-                                        <span class="author">{{ c.author }}</span>
-                                        <span class="date">{{ c.created_at }}</span>
-                                    </div>
-                                    <div class="content">{{ c.body }}</div>
-                                </div>
-                            {% endif %}
-                        {% endfor %}
-                    {% else %}
-                        <div class="no-comments">There are no comments currently</div>
-                    {% endif %}
-                    {{ comment_form.body | add_class:"form-control" }}
-                    {{ comment_form.author }}
-                    {{ comment_form.post }}
-                    <button type="submit" class="form-control">Submit</button>
-                </form>
-                <ul>
-
-                </ul>
-            </div>
-            <div class="row">
-            </div>
-        </div>
-{% endblock content %}
+    </div>
+    {% endblock content %}

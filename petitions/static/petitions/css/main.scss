@@ -73,6 +73,10 @@ html {
               margin-bottom: 5px;
             }
 
+            #votes_count {
+              font-size: 16px;
+            }
+
             .author {
               font-size: 14px;
               margin-bottom: 10px;
@@ -188,6 +192,10 @@ html {
         background-clip: content-box;
       }
 
+      .progress{
+        height: 25px;
+      }
+
       .btn-custom {
         background-color: #ec2c22;
         color: white;
@@ -200,7 +208,7 @@ html {
       .votes {
         text-align: center;
         font-family: "Open Sans", sans-serif;
-        font-size: 24px;
+        font-size: 20px;
         //border: 1px solid green;
         // border-radius: 5px;
         //background: #98ff98;
