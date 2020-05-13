@@ -128,12 +128,20 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 import os
+
 PROJECT_DIR=os.path.dirname(__file__)
 STATIC_URL = '/static/'
+SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, "processed")
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'sass_processor.finders.CssFinder',
+)
 
 LOGIN_REDIRECT_URL = 'petitions:index'
 LOGOUT_REDIRECT_URL = ''
