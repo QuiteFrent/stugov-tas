@@ -132,7 +132,8 @@ import os
 
 PROJECT_DIR=os.path.dirname(__file__)
 STATIC_URL = '/static/'
-SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, "processed")
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, "processed/")
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
@@ -143,6 +144,10 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'sass_processor.finders.CssFinder',
 )
+MIDDLEWARE_CLASSES = (
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+)
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 LOGIN_REDIRECT_URL = 'petitions:index'
 LOGOUT_REDIRECT_URL = ''
