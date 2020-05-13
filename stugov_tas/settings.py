@@ -132,7 +132,7 @@ import os
 
 PROJECT_DIR=os.path.dirname(__file__)
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR, "processed/")
 
 STATICFILES_DIRS = [
