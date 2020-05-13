@@ -1,1 +1,1 @@
-web: gunicorn stugov-tas.wsgi
+web: gunicorn stugov_tas.wsgi
