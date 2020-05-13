@@ -14,6 +14,8 @@ django-compressor = "*"
 django-sass-processor = "*"
 six = "*"
 pillow = "*"
+gunicorn = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.7"
